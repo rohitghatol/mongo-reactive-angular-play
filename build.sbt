@@ -11,3 +11,8 @@ resolvers += "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositor
 libraryDependencies ++= Seq(
   "org.reactivemongo" %% "play2-reactivemongo" % "0.10.5.akka23-SNAPSHOT"
 )
+
+libraryDependencies ++= Seq(
+  "be.cafeba" %% "play-cors" % "1.0"
+)
+

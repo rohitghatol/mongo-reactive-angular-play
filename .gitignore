@@ -12,3 +12,11 @@ logs
 /.idea
 /.idea_modules
 .history
+
+web/bower_components
+web/node_modules
+web/dist
+web/.tmp
+web/.sass-cache
+
+public
