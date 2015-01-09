@@ -23,15 +23,24 @@ Production Mode
 All HTML files are minified and web service calls are pointing to relative end points e.g /people. 
 
 In Separate terminal
+
 $>mongod
 
+
 In Another terminal
+
 $>cd project-dir
+
 $>cd web
+
 $>npm install       //one time
+
 $>bower install     //one time
+
 $>grunt build
+
 $>cd ..
+
 $>activator run     //Start Play Framework server
 
 Goto http://localhost:9000/index.html on browser to see the application. This is an Angular app accessing the restful apis of Play Framework reading the data from Mongo DB. Warning - You will only see a blank list of people since we haven't added the functionality to add People from UI. If you add people from restful apis you will see the changes reflect on the ui
@@ -41,15 +50,23 @@ Development Mode
 All the HTML, JavaScript and CSS files are exploded. You work out of the web directory. You run the Restful Server (Play Framework) and Angular JS Server (grunt serve) seperately. Angular Js code access the restful apis using cors (since domain names are different in this case)
 
 In Separate terminal
+
 $>mongod
 
+
 In Another terminal
+
 $>cd project-dir
+
 $>activator run    //Start Play Framework server - restful apis run at http://localhost:9000/people
 
+
 In yet another terminal
+
 $>cd project-dir
+
 $>cd web
+
 $>grunt server     //Starts separate web server for angularjs (watches changes and reloads changes) at http://localhost:9999/
 
 
