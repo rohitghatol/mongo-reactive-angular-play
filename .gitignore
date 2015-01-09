@@ -18,5 +18,6 @@ web/node_modules
 web/dist
 web/.tmp
 web/.sass-cache
+web/app/scripts/config.js
 
 public

@@ -1,2 +1,12 @@
-
-<h1>People App</h1>
+<div ng-controller="PeopleCtrl">
+    <h1>People App</h1>
+    <div ng-show="!error">
+        List of People
+        <ul ng-repeat="person in peoples">
+            <li ng-bind="person.name"></li>
+        </ul>
+    </div>
+    <div ng-show="error">
+            <span ng-bind="error"></span>
+    </div>
+</div>

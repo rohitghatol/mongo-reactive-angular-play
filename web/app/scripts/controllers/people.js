@@ -8,17 +8,16 @@
  * Controller of the appApp
  */
 angular.module('appApp')
-  .controller('PeopleCtrl',['$scope','$http',function ($scope,$http) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-    $http.get('http://localhost:9000/people').
+  .controller('PeopleCtrl',['$scope','$http','ENV',function ($scope,$http,ENV) {
+
+
+    $http.get(ENV.apiEndpoint+'/people').
         success(function(data, status, headers, config) {
-            alert(data);
+            $scope.peoples=data;
+            $scope.error=null;
         }).
         error(function(data, status, headers, config) {
-            alert(data);
+            $scope.peoples=null;
+            $scope.error='Failed to load People';
         });
   }]);
