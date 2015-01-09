@@ -18,7 +18,8 @@ module.exports = function (grunt) {
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
-    dist: 'dist'
+    dist: 'dist',
+    target:'../public'
   };
 
   // Define the configuration for all the tasks
@@ -317,6 +318,19 @@ module.exports = function (grunt) {
           src: ['generated/*']
         }]
       },
+        target: {
+            files: [
+                {
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.dist %>',
+                    dest: '<%= yeoman.target %>',
+                    src: [
+                        '{,*/}*.*'
+                    ]
+                }
+            ]
+        },
       styles: {
         expand: true,
         cwd: '<%= yeoman.app %>/styles',
@@ -392,7 +406,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'copy:target'
   ]);
 
   grunt.registerTask('default', [
