@@ -5,12 +5,27 @@ This is Mongo Reactive Angular Play Framework Template.
 
 Quick Note
 ----
-This is a AngularJs, Scala-Play and Reactive-MongoDB Template put up in few hours. This was one for internal consumption. There are few things missing in the template and these are list below. Take this template with a pintch of salt
+This is a AngularJs, Scala-Play and Reactive-MongoDB Template put up in _few hours_. This was one for internal consumption. There are few things missing in the template and these are list below. Take this template with a pintch of salt
+
+Pending Items
 * On the Server Side the Restful API for Person is include - Only Create and List are available
 * On the Server Side the Restful API code needs to be split into Repository, Controller
 * On the Server Side the Model class for Person needs to have an id for Post and Delete to work
 * On Angular Js Side there would be a move from ngRoute to 'ui-router'
 
+ScreenShots
+=====
+Home Page
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-1.png)]
+
+People List
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-2.png)]
+
+People Form
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-3.png)]
+
+People List
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-4.png)]
 Prerequistes
 =====
 * Yeoman installed
