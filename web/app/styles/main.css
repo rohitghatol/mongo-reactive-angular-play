@@ -77,3 +77,11 @@ body {
     border-bottom: 0;
   }
 }
+
+.lead img{
+    width:100px;
+}
+
+.logo{
+    width:200px;
+}

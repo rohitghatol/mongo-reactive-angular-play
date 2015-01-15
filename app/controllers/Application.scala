@@ -15,6 +15,7 @@ import reactivemongo.api._
 import play.modules.reactivemongo.MongoController
 import play.modules.reactivemongo.json.collection.JSONCollection
 
+//FIXME - This is a quick example, in real world this would be broken down into Services, Repository etc
 object Application extends Controller with MongoController with JSONFormats {
 
   def collection: JSONCollection = db.collection[JSONCollection]("people")

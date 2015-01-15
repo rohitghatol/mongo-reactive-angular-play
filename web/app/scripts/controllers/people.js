@@ -8,16 +8,18 @@
  * Controller of the appApp
  */
 angular.module('appApp')
-  .controller('PeopleCtrl',['$scope','$http','ENV',function ($scope,$http,ENV) {
+  .controller('PeopleCtrl',['$scope','PeopleService','$location',function ($scope,PeopleService,$location) {
+        $scope.peoples = PeopleService.query();
+
+        $scope.create = function(){
+            console.log($scope.person);
+            PeopleService.save($scope.person,function(){
+                console.log("Data is saved");
+                $scope.$apply( $location.path( '/people/list' ) );
+            });
+
+        }
 
 
-    $http.get(ENV.apiEndpoint+'/people').
-        success(function(data, status, headers, config) {
-            $scope.peoples=data;
-            $scope.error=null;
-        }).
-        error(function(data, status, headers, config) {
-            $scope.peoples=null;
-            $scope.error='Failed to load People';
-        });
+
   }]);

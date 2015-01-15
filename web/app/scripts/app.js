@@ -16,6 +16,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'ngResource',
     'config'
 
   ])
@@ -25,10 +26,23 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/people', {
-        templateUrl: 'views/people.html',
+      .when('/people/list', {
+        templateUrl: 'views/people/list.html',
         controller: 'PeopleCtrl'
       })
+//FIXME - Future Enhancements when backend supports this
+//      .when('/people/create', {
+//        templateUrl: 'views/people/create.html',
+//        controller: 'PeopleCtrl'
+//      })
+//      .when('/people/:id/edit', {
+//        templateUrl: 'views/people/edit.html',
+//        controller: 'PeopleCtrl'
+//      })
+//      .when('/people/:id/view', {
+//        templateUrl: 'views/people/view.html',
+//        controller: 'PeopleCtrl'
+//      })
       .otherwise({
         redirectTo: '/'
       });
