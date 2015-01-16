@@ -5,27 +5,30 @@ This is Mongo Reactive Angular Play Framework Template.
 
 Quick Note
 ----
-This is a AngularJs, Scala-Play and Reactive-MongoDB Template put up in _few hours_. This was one for internal consumption. There are few things missing in the template and these are list below. Take this template with a pintch of salt
+This Template App uses following techologies/frameworks
+* Angular Js
+* Angular Js Directive for BootStrap
+* 'ui-router' for Routing
+* 'ngResource' as restful client in Angular Js
+* Yo Angular Generator
+* Scala Play framework
+* Reactive Mongo Driver
+* Mongo DB
 
-Pending Items
-* On the Server Side the Restful API for Person is include - Only Create and List are available
-* On the Server Side the Restful API code needs to be split into Repository, Controller
-* On the Server Side the Model class for Person needs to have an id for Post and Delete to work
-* On Angular Js Side there would be a move from ngRoute to 'ui-router'
 
 ScreenShots
 =====
 Home Page
-![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-1.png)]
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-1.png)
 
 People List
-![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-2.png)]
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-2.png)
 
 People Form
-![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-3.png)]
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-3.png)
 
 People List
-![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-4.png)]
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-4.png)
 
 People View
 ![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-5.png)]
@@ -68,13 +71,13 @@ $>npm install       //one time
 
 $>bower install     //one time
 
-$>grunt build
+$>grunt build (If this hangs, please copy web/dist to public folder)
 
 $>cd ..
 
-$>activator run     //Start Play Framework server
+$>activator start     //Start Play Framework server
 
-Goto http://localhost:9000/index.html on browser to see the application. This is an Angular app accessing the restful apis of Play Framework reading the data from Mongo DB. Warning - You will only see a blank list of people since we haven't added the functionality to add People from UI. If you add people from restful apis you will see the changes reflect on the ui
+Goto http://localhost:9000/ on browser to see the application. This is an Angular app accessing the restful apis of Play Framework reading the data from Mongo DB. 
 
 Development Mode
 ------
@@ -89,7 +92,7 @@ In Another terminal
 
 $>cd project-dir
 
-$>activator run    //Start Play Framework server - restful apis run at http://localhost:9000/people
+$>activator start    //Start Play Framework server - restful apis run at http://localhost:9000/people
 
 
 In yet another terminal
