@@ -1,0 +1,32 @@
+<div class="row">
+
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Employee Manager</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-xs-12">
+        <h4>Add New Person</h4>
+        <form ng-submit="addEmployee()">
+            <div class="form-group">
+                <label for="id">Employee Id</label>
+                <input type="text"  id="id" class="form-control" ng-model="employee._id" placeholder="Enter Employee Id">
+            </div>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" class="form-control" ng-model="employee.firstName" placeholder="Enter First Name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="form-control" ng-model="employee.lastName" placeholder="Enter Last Name">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" ui-sref="employees">Cancel</button>
+        </form>
+    </div>
+
+</div>

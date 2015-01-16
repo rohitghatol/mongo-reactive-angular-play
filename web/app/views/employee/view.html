@@ -1,0 +1,39 @@
+<div class="row">
+
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Employee Manager</h1>
+    </div>
+</div>
+<div class="row" >
+    <div class="col-md-6 col-xs-12">
+        <h4>View Person</h4>
+        <table class="table table-responsive table-bordered">
+            <tr>
+                <td><h3>Details for {{employee.firstName}}</h3></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Employee Id</td>
+                <td>{{employee._id}}</td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td>{{employee.firstName}}</td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>{{employee.lastName}}</td>
+            </tr>
+
+        </table>
+        <div>
+            <a class="btn btn-primary" ui-sref="editEmployee({id:employee._id})">Edit</a>
+            <a class="btn btn-primary" ui-sref="employees">Cancel</a>
+        </div>
+    </div>
+
+</div>
+

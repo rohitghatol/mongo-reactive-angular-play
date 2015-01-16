@@ -2,9 +2,24 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+
 # Home page
-GET        /people              controllers.Application.people
-POST       /people              controllers.Application.addPerson()
+GET         /                    controllers.Assets.at(path="/public", file="index.html")
+
+# List Employee
+GET        /employees            controllers.Application.listEmployees
+
+# Get Employee by id
+GET        /employees/:id         controllers.Application.findEmployee(id)
+
+# Adds a Employee
+POST       /employees            controllers.Application.addEmployee
+
+# Partially updates the Employee
+PUT        /employees/:id        controllers.Application.updateEmployee(id)
+
+# Deletes a Employee
+DELETE     /employees/:id      controllers.Application.deleteEmployee(id)
 
 # Map static resources from the /public folder to the /assets URL path
 GET        /*file               controllers.Assets.at(path="/public", file)

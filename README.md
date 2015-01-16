@@ -26,6 +26,14 @@ People Form
 
 People List
 ![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-4.png)]
+
+People View
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-5.png)]
+
+People Edit
+![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/rohitghatol/mongo-reactive-angular-play/master/screenshots/pic-6.png)]
+
+
 Prerequistes
 =====
 * Yeoman installed
